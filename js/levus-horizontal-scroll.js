@@ -76,7 +76,6 @@
 
             ul.style.left = `-25%`;
 
-
             item.innerHTML += '<span class="left"></span><span class="right"></span>';
 
             item.addEventListener('click', (e) => {
@@ -112,9 +111,6 @@
                     }, 50);
                 }
             });
-
-
         });
-
     }
 }
