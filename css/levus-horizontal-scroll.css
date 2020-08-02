@@ -29,6 +29,7 @@
     top: 50%;
     margin-top: -20px;
     cursor: pointer;
+    z-index: 1;
 }
 
 .levus-horizontal-scroll .left {
