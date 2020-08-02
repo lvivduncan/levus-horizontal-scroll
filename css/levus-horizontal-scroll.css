@@ -1,0 +1,40 @@
+.levus-horizontal-scroll {
+    overflow: hidden;
+}
+
+.levus-horizontal-scroll ul {
+    padding: 0;
+    margin: 0;
+    white-space: nowrap;
+    position: relative;
+}
+
+.levus-horizontal-scroll li {
+    display: inline-block;
+    width: 25%;
+}
+
+.levus-horizontal-scroll img {
+    width: 100%;
+    display: block;
+}
+
+.levus-horizontal-scroll .left,
+.levus-horizontal-scroll .right {
+    display: inline-block;
+    height: 40px;
+    width: 40px;
+    background: red;
+    position: absolute;
+    top: 50%;
+    margin-top: -20px;
+    cursor: pointer;
+}
+
+.levus-horizontal-scroll .left {
+    left: 0;
+}
+
+.levus-horizontal-scroll .right {
+    right: 0;
+}
