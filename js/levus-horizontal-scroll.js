@@ -6,10 +6,6 @@ class LevusHorizontalScroll {
         this.ul = this.scroll.querySelector('.levus-horizontal-scroll ul');
         // elements
         this.li = this.ul.querySelectorAll('li');
-        // left button
-        // this.left = this.scroll.querySelector('.left');
-        // righ button
-        // this.right = this.scroll.querySelector('.right');
     }
 
     clone() {
@@ -34,7 +30,7 @@ class LevusHorizontalScroll {
         right.setAttribute('class', 'right');
         this.scroll.prepend(right);
 
-        document.addEventListener('click', (e) => {
+        this.scroll.addEventListener('click', (e) => {
             if (e.target.className == 'left') {
                 // move last element
                 this.ul.prepend(this.ul.lastElementChild);
@@ -49,7 +45,7 @@ class LevusHorizontalScroll {
             }
         });
 
-        document.addEventListener('click', (e) => {
+        this.scroll.addEventListener('click', (e) => {
             if (e.target.className == 'right') {
                 // move first element
                 this.ul.append(this.ul.firstElementChild);
