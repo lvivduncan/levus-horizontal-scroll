@@ -9,11 +9,86 @@
     margin: 0;
     white-space: nowrap;
     position: relative;
+    left: -25%;
+}
+
+@media (max-width: 996px) {
+    .levus-horizontal-scroll ul {
+        left: -33.333333%;
+    }
+}
+
+@media (max-width: 776px) {
+    .levus-horizontal-scroll ul {
+        left: -50%;
+    }
+}
+
+@media (max-width: 500px) {
+    .levus-horizontal-scroll ul {
+        left: -100%;
+    }
+}
+
+
+/* addClass/removeClass */
+
+.to-left {
+    transform: translateX(25%);
+}
+
+.to-right {
+    transform: translateX(-25%);
+}
+
+@media (max-width: 996px) {
+    .to-left {
+        transform: translateX(33.333333%);
+    }
+    .to-right {
+        transform: translateX(-33.333333%);
+    }
+}
+
+@media (max-width: 776px) {
+    .to-left {
+        transform: translate(50%);
+    }
+    .to-right {
+        transform: translate(-50%);
+    }
+}
+
+@media (max-width: 500px) {
+    .to-left {
+        transform: translateX(100%);
+    }
+    .to-right {
+        transform: translateX(-100%);
+    }
 }
 
 .levus-horizontal-scroll li {
     display: inline-block;
     width: 25%;
+}
+
+@media (max-width: 996px) {
+    .levus-horizontal-scroll li {
+        width: 33.333333%;
+    }
+}
+
+@media (max-width: 776px) {
+    .levus-horizontal-scroll li {
+        width: 50%;
+    }
+}
+
+@media (max-width: 500px) {
+    .levus-horizontal-scroll li {
+        width: 100%;
+    }
 }
 
 .levus-horizontal-scroll img {
@@ -39,11 +114,11 @@
 }
 
 .levus-horizontal-scroll .left::before {
-    content: '';
+    content: "";
     display: inline-block;
     width: 40px;
     height: 40px;
-    background: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACQAAAAkCAYAAADhAJiYAAAARElEQVR4Ae3OAQYAIBQE0Y/u21H2IB2yYEGAFEvzGACmAADvdRczM12PmXEjbaYxwwwzh7QNqez3KaaYYkoVQu4GAMACdpNBa8xOosUAAAAASUVORK5CYII=') center center no-repeat;
+    background: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACQAAAAkCAYAAADhAJiYAAAARElEQVR4Ae3OAQYAIBQE0Y/u21H2IB2yYEGAFEvzGACmAADvdRczM12PmXEjbaYxwwwzh7QNqez3KaaYYkoVQu4GAMACdpNBa8xOosUAAAAASUVORK5CYII=") center center no-repeat;
 }
 
 .levus-horizontal-scroll .right {
@@ -51,9 +126,9 @@
 }
 
 .levus-horizontal-scroll .right::before {
-    content: '';
+    content: "";
     display: inline-block;
     width: 40px;
     height: 40px;
-    background: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACQAAAAkCAYAAADhAJiYAAAAS0lEQVR4Ae3OsQ0AEBQGYYXSrkZ5gxjDYJA8jVKIv7gvuf4CAOCe7MnMNE9iqo6a0lRiiimmPoijsg0ZM8wwc0hqZjKlmcU8AMBLHcNiQx9bPHBBAAAAAElFTkSuQmCC') center center no-repeat;
+    background: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACQAAAAkCAYAAADhAJiYAAAAS0lEQVR4Ae3OsQ0AEBQGYYXSrkZ5gxjDYJA8jVKIv7gvuf4CAOCe7MnMNE9iqo6a0lRiiimmPoijsg0ZM8wwc0hqZjKlmcU8AMBLHcNiQx9bPHBBAAAAAElFTkSuQmCC") center center no-repeat;
 }

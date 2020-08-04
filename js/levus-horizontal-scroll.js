@@ -1,4 +1,4 @@
-// 2-08-2020
+// 4-08-2020
 {
     // scroll
     const scroll = document.querySelectorAll('.levus-horizontal-scroll');
@@ -8,7 +8,7 @@
 
         // wrapper
         const ul = scroll[0].querySelector('.levus-horizontal-scroll ul');
-        // elements
+        // nodelist
         let li = ul.querySelectorAll('li');
 
         // if less than 5, cloned 
@@ -19,8 +19,6 @@
             li = scroll[0].querySelectorAll('.levus-horizontal-scroll li');
         }
 
-        ul.style.left = `-25%`;
-
         scroll[0].innerHTML += '<span class="left"></span><span class="right"></span>';
 
         scroll[0].addEventListener('click', (e) => {
@@ -30,11 +28,10 @@
                 const last = ul.lastElementChild;
                 ul.prepend(last);
                 // destroy transition
-                ul.style.transition = '';
-                // animation
-                ul.style.transform = 'translateX(-25%)';
+                ul.style.transition = 'none';
+                ul.classList.add('to-right');
                 setTimeout(() => {
-                    ul.style.transform = 'translateX(0)';
+                    ul.classList.remove('to-right');
                     ul.style.transition = '.5s';
                 }, 50);
             }
@@ -47,11 +44,10 @@
                 const first = ul.firstElementChild;
                 ul.append(first);
                 // destroy transition
-                ul.style.transition = '';
-                // animation
-                ul.style.transform = 'translateX(25%)';
+                ul.style.transition = 'none';
+                ul.classList.add('to-left');
                 setTimeout(() => {
-                    ul.style.transform = 'translateX(0)';
+                    ul.classList.remove('to-left');
                     ul.style.transition = '.5s';
                 }, 50);
             }
@@ -74,8 +70,6 @@
                 li = item.querySelectorAll('.levus-horizontal-scroll li');
             }
 
-            ul.style.left = `-25%`;
-
             item.innerHTML += '<span class="left"></span><span class="right"></span>';
 
             item.addEventListener('click', (e) => {
@@ -85,11 +79,10 @@
                     const last = ul.lastElementChild;
                     ul.prepend(last);
                     // destroy transition
-                    ul.style.transition = '';
-                    // animation
-                    ul.style.transform = 'translateX(-25%)';
+                    ul.style.transition = 'none';
+                    ul.classList.add('to-right');
                     setTimeout(() => {
-                        ul.style.transform = 'translateX(0)';
+                        ul.classList.remove('to-right');
                         ul.style.transition = '.5s';
                     }, 50);
                 }
@@ -102,11 +95,10 @@
                     const first = ul.firstElementChild;
                     ul.append(first);
                     // destroy transition
-                    ul.style.transition = '';
-                    // animation
-                    ul.style.transform = 'translateX(25%)';
+                    ul.style.transition = 'none';
+                    ul.classList.add('to-left');
                     setTimeout(() => {
-                        ul.style.transform = 'translateX(0)';
+                        ul.classList.remove('to-left');
                         ul.style.transition = '.5s';
                     }, 50);
                 }
