@@ -11,8 +11,8 @@
         // nodelist
         let li = ul.querySelectorAll('li');
 
-        // if less than 5, cloned 
-        if (li.length <= 5) {
+        // if less than 4, cloned 
+        if (li.length <= 4) {
             // cloned and append elements
             li.forEach(element => ul.append(element.cloneNode(true)));
             // new nodelist
@@ -62,8 +62,8 @@
             // elements
             let li = ul.querySelectorAll('li');
 
-            // if less than 5, cloned 
-            if (li.length <= 5) {
+            // if less than 4, cloned 
+            if (li.length < 4) {
                 // cloned and append elements
                 li.forEach(element => ul.append(element.cloneNode(true)));
                 // new nodelist
