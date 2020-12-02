@@ -1,3 +1,7 @@
+// 2-12-2020
+// todo: fixed toleft and toright
+
+
 class LevusHorizontalScroll {
     constructor(scroll) {
         // scroll

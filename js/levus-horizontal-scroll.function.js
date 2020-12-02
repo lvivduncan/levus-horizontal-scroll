@@ -1,7 +1,7 @@
-// 8-10-2020
-{
-    // scroll
-    const scroll = document.querySelectorAll('.levus-horizontal-scroll');
+// 2-12-2020
+function levusHorizontalScroll(selector){
+
+    const scroll = document.querySelectorAll(selector);
 
     scroll.forEach(item => {
         const ul = item.querySelector('ul');
@@ -51,3 +51,5 @@
         });
     });
 }
+
+levusHorizontalScroll('.levus-horizontal-scroll');
