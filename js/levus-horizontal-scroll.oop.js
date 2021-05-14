@@ -1,6 +1,7 @@
-// 2-12-2020
+// 8-10-2020
 // todo: fixed toleft and toright
-
+// 14-05-2021
+// todo: '<div class="levus-nav"><span class="left"></span><span class="right"></span></div>'
 
 class LevusHorizontalScroll {
     constructor(scroll) {

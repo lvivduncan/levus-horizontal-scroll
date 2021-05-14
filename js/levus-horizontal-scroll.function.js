@@ -1,4 +1,5 @@
-// 2-12-2020
+// 8-10-2020
+// 14-05-2021
 function levusHorizontalScroll(selector){
 
     const scroll = document.querySelectorAll(selector);
@@ -16,7 +17,7 @@ function levusHorizontalScroll(selector){
             li = item.querySelectorAll('li');
         }
 
-        item.innerHTML += '<span class="left"></span><span class="right"></span>';
+        item.innerHTML += '<div class="levus-nav"><span class="left"></span><span class="right"></span></div>';
 
         item.addEventListener('click', e => {
             const ul = item.querySelector('ul');

@@ -10,7 +10,7 @@
       });
       li = item.querySelectorAll('.levus-horizontal-scroll li');
     }
-    item.innerHTML += '<span class="left"></span><span class="right"></span>';
+    item.innerHTML += '<div class="levus-nav"><span class="left"></span><span class="right"></span></div>';
     item.addEventListener('click', function (e) {
       var ul = item.querySelector('.levus-horizontal-scroll ul');
       if (e.target.className == 'left') {

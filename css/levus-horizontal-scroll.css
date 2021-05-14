@@ -1,6 +1,6 @@
 .levus-horizontal-scroll {
     overflow: hidden;
-    padding-top: 50px;
+    /* padding-top: 50px; */
     position: relative;
 }
 
@@ -76,6 +76,14 @@
     display: block;
 }
 
+/* left/right arrows */
+.levus-horizontal-scroll .levus-nav{
+    position: absolute;
+    top: calc(50% - 20px);
+    left: 0;
+    width: 100%
+}
+
 .levus-horizontal-scroll .left,
 .levus-horizontal-scroll .right {
     display: inline-block;
@@ -90,7 +98,7 @@
 }
 
 .levus-horizontal-scroll .left {
-    right: 50px;
+    left: 10px;
 }
 
 .levus-horizontal-scroll .left::before {
@@ -102,7 +110,7 @@
 }
 
 .levus-horizontal-scroll .right {
-    right: 0;
+    right: 10px;
 }
 
 .levus-horizontal-scroll .right::before {
